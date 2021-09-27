@@ -1,4 +1,4 @@
-#!/usr/bin/env node --experimental-modules
+#!/usr/bin/env node
 
 // Use the reverseString() function to return reverse of String.
 // For Bonus Points. Can you do it without creating any new variables?

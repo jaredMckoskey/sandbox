@@ -1,4 +1,4 @@
-#!/usr/bin/env node --experimental-modules
+#!/usr/bin/env node
 
 // Use the formatter() function to format the Array into a readable string list.
 

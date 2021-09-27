@@ -1,4 +1,4 @@
-#!/usr/bin/env node --experimental-modules
+#!/usr/bin/env node
 
 // Use the getMostCommonCharacter() function to find and return the most common Character in the String.
 

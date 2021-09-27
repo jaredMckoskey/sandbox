@@ -63,23 +63,6 @@ typings/
 .ipa
 .apk
 
-# result files
-# /results/
-/results/spec
-/results/screenshots
-/result/tempDownloads
-/results/allure/*.log
-/results/allure/*.png
-/results/allure/*.xml
-
-# allure report
-/allure-report/*
-!/allure-report/history
-/imageComparison/*
-!/imageComparison/baseline
-#/imageComparison/actual
-#/imageComparison/diff
-
 # log files
 /logs
 
@@ -90,5 +73,3 @@ typings/
 
 # Word
 ~$*.doc*
-/allure-report/
-/allure-results/

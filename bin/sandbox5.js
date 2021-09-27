@@ -1,4 +1,4 @@
-#!/usr/bin/env node --experimental-modules
+#!/usr/bin/env node
 
 // Use the isItAPalindrome() function to return Boolean if the String is a palindrome.
 

@@ -1,4 +1,4 @@
-#!/usr/bin/env node --experimental-modules
+#!/usr/bin/env node
 
 // Use the getLongerString() function to find and return the longest String in the Array.
 

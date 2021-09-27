@@ -1,4 +1,4 @@
-#!/usr/bin/env node --experimental-modules
+#!/usr/bin/env node
 
 // Use the isItAnAnagram() function to return Boolean if the two Strings are an anagram.
 

@@ -12,58 +12,23 @@
         "sandbox3": "./bin/sandbox3.js",
         "sandbox4": "./bin/sandbox4.js",
         "sandbox5": "./bin/sandbox5.js",
-        "sandbox6": "./bin/sandbox6.js"
+        "sandbox6": "./bin/sandbox6.js",
+        "sandboxMining": "./bin/sandboxMining.js"
     },
     "scripts": {
-        "sandbox": "node --experimental-modules ./bin/sandbox.js",
-        "sandbox1": "node --experimental-modules ./bin/sandbox1.js",
-        "sandbox2": "node --experimental-modules ./bin/sandbox2.js",
-        "sandbox3": "node --experimental-modules ./bin/sandbox3.js",
-        "sandbox4": "node --experimental-modules ./bin/sandbox4.js",
-        "sandbox5": "node --experimental-modules ./bin/sandbox5.js",
-        "sandbox6": "node --experimental-modules ./bin/sandbox6.js"
+        "sandbox": "node ./bin/sandbox.js",
+        "sandbox1": "node ./bin/sandbox1.js",
+        "sandbox2": "node ./bin/sandbox2.js",
+        "sandbox3": "node ./bin/sandbox3.js",
+        "sandbox4": "node ./bin/sandbox4.js",
+        "sandbox5": "node ./bin/sandbox5.js",
+        "sandbox6": "node ./bin/sandbox6.js",
+        "sandboxMining": "node ./bin/sandboxMining.js"
     },
     "keywords": [],
     "author": "Jared Mckoskey",
     "license": "ISC",
     "dependencies": {
         "eslint": "^7.22.0"
-    },
-    "eslintConfig": {
-        "env": {
-            "commonjs": true,
-            "es6": true
-        },
-        "extends": "eslint:recommended",
-        "parserOptions": {
-            "ecmaVersion": 2021,
-            "sourceType": "module"
-        },
-        "globals": {
-            "global": true,
-            "process": true,
-            "console": true
-        },
-        "rules": {
-            "indent": [
-                "error",
-                4
-            ],
-            "linebreak-style": [
-                "error",
-                "unix"
-            ],
-            "quotes": [
-                "error",
-                "double"
-            ],
-            "semi": [
-                "error",
-                "always"
-            ],
-            "no-unused-vars": [
-                "off"
-            ]
-        }
     }
 }
