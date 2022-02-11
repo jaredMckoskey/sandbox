@@ -13,7 +13,9 @@
         "sandbox4": "./bin/sandbox4.js",
         "sandbox5": "./bin/sandbox5.js",
         "sandbox6": "./bin/sandbox6.js",
-        "sandboxMining": "./bin/sandboxMining.js"
+        "sandboxBlackJack": "./bin/sandboxBlackJack.js",
+        "sandboxMining": "./bin/sandboxMining.js",
+        "sandboxRockPaperScissors": "./bin/sandboxRockPaperScissors.js"
     },
     "scripts": {
         "sandbox": "node ./bin/sandbox.js",
@@ -23,12 +25,17 @@
         "sandbox4": "node ./bin/sandbox4.js",
         "sandbox5": "node ./bin/sandbox5.js",
         "sandbox6": "node ./bin/sandbox6.js",
-        "sandboxMining": "node ./bin/sandboxMining.js"
+        "sandboxBlackJack": "node ./bin/sandboxBlackJack.js",
+        "sandboxMining": "node ./bin/sandboxMining.js",
+        "sandboxRockPaperScissors": "node ./bin/sandboxRockPaperScissors.js"
     },
     "keywords": [],
     "author": "Jared Mckoskey",
     "license": "ISC",
     "dependencies": {
-        "eslint": "^7.22.0"
+        "chalk": "^5.0.0",
+        "crypto": "^1.0.1",
+        "eslint": "^7.22.0",
+        "inquirer": "^8.2.0"
     }
 }

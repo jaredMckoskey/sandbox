@@ -3,7 +3,6 @@
 import { createHmac } from "crypto";
 
 const start = () => {
-    // This is a Sandbox Method to play around in.
 
     let maxMemory = 10000000;
     let blockNumber = 2;
