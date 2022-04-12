@@ -1,14 +1,17 @@
 #!/usr/bin/env node
 
+//TODO: Add Betting to the Black Jack Program
+
 import Chalk from "chalk";
 import Inquirer from "inquirer";
-import Deck from "../resources/deckOfCards.js";
+import DeckOfCards from "../resources/deckOfCards.js";
 
+let deck = Array().concat(Object.values(DeckOfCards));
 let players = [];
 let numberOfDecks = 1;
 let startingChipValue = 500;
 
-export default function startBlackJack() {
+function startBlackJack() {
 
     if (players.length > 0) {
         dealInitialCards();
@@ -43,6 +46,8 @@ async function getPlayers() {
         numOfPlayers = answers["numOfPlayers"];
         numberOfDecks = answers["numOfDecks"];
         startingChipValue = answers["numOfChips"];
+
+        shuffleDeck();
     });
 
     for (let i = 0; i < numOfPlayers; i++) {
@@ -63,7 +68,8 @@ async function getPlayers() {
                 blackJack: false,
                 busted: false,
                 help: false,
-                chips: startingChipValue
+                chips: startingChipValue,
+                bet: 0
             });
         });
     }
@@ -79,7 +85,7 @@ async function getPlayers() {
 }
 
 function getPlayAgain() {
-    // play again code
+    shuffleDeck();
 }
 
 function dealInitialCards() {
@@ -246,12 +252,17 @@ function evaluateTable() {
         } else if (getPlayerCardsValue(i) === dealerValue) {
             console.log(Chalk.blue(`${players[i].name} PUSHED with ${Chalk.yellow(getPlayerCardsValue(i))}`));
         }
-
     }
 }
 
+function shuffleDeck() {
+    deck = Array().concat(Object.values(DeckOfCards));
+
+    for (let i =0; i < numberOfDecks -1; i++) deck = deck.concat(Object.values(DeckOfCards));
+}
+
 function drawCard(playerIndex) {
-    let card = Deck.splice(Math.floor(Math.random() * Deck.length - 1), 1)[0];
+    let card = deck.splice(Math.floor(Math.random() * deck.length - 1), 1)[0];
 
     if (playerIndex === players.length - 1
         && players[playerIndex].cards.length === 1
